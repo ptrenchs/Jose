@@ -40,7 +40,10 @@ def tablas(*numeros):
             while True:
                 if i == 0:
                     print(f'Completa la siguiente operacion {enunciado} es')
-                    resoltado = !read entrada; echo $entrada
+                    try:
+                        resoltado = !read entrada; echo $entrada
+                    except:
+                        pass
                     clear_output()
                     try:
                         resoltado = resoltado[0]
@@ -51,7 +54,10 @@ def tablas(*numeros):
                     clear_output()
                     print(f'Respuesta incorrecta {enunciado} es')
                     # resoltado = input()
-                    resoltado = !read entrada; echo $entrada
+                    try:
+                        resoltado = !read entrada; echo $entrada
+                    except:
+                        pass
                     clear_output()
                     try:
                         resoltado = resoltado[0]
